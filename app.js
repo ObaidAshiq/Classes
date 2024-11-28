@@ -15,7 +15,6 @@ app.use(shopRoutes) // here shop routes will be executed for any path, but inter
 
 // This will be executed for all the paths, and only when if we havent handled that path by other handler 
 app.use((req,res,next)=>{
-    console.log('first')
     res.send('<h1>Page not found</h1>')
 })
 
